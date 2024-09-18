@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
     <title>My Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
 
     <section>
+        <h2>First section</h2>
         <div>
             <img src="res/images/me.png" width="128" height="128" alt="My picture">
         </div>
@@ -21,7 +29,6 @@
             <strong>2.65</strong>
         </div>
     </section>
-
 
     <section>
         <h1>Courses</h1>
@@ -62,12 +69,29 @@
             </tbody>
         </table>
     </section>
-</head>
 
-<body>
-    <header>
-        <strong>Welcome to your dashboard!</strong>
-    </header>
+    <!-- Form added by me -->
+    <form>
+        <label>Course Title</label>
+        <input name="CTitle" type="text">
+        <br>
+        <label>Semester</label>
+        <select name="semesters" id="semesters">
+            <option value="Fall">Fall</option>
+            <option value="Spring">Spring</option>
+        </select>
+        <br>
+        <label><b>Attendance:</b></label>
+        <br>
+        <!-- radio buttons -->
+        <input type="radio" name="virtual" id="virtual">
+        <label>Virtual attendance</label>
+        <br>
+        <input type="radio" name="Physical" id="physical">
+        <label>Physical attendance</label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 
     <footer>
         <ul>
@@ -79,31 +103,6 @@
             </li>
         </ul>
     </footer>
-
-    <!-- Form added by me -->
-    <form>
-        <table>
-            <label for="CTitle">Course Title</label>
-            <input name="CTitle" , type="text">
-            <br>
-            <label>Semester</label>
-            <select name="semesters" id="semesters">
-                <option value="Fall">Fall</option>
-                <option value="Spring">Spring</option>
-            </select>
-            <br>
-            <label for="Attendance"><b>Attendance:</b></label>
-            <br>
-            <!-- radio buttons -->
-            <input type="radio" name="virtual" id="virtual">
-            <label for="Virtual">Virtual attendance</label>
-            <br>
-            <input type="radio" name="Physical" id="physical">
-            <label for="Physical">Physical attendance</label>
-            <br>
-            <button type="submit">Submit</button>
-        </table>
-    </form>
 </body>
 
 </html>
