@@ -67,6 +67,14 @@
                     <td>65</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                </tr>
+            </tfoot>
         </table>
     </section>
 
@@ -84,10 +92,11 @@
         <label><b>Attendance:</b></label>
         <br>
         <!-- radio buttons -->
-        <input type="radio" name="virtual" id="virtual">
+         <!-- Name has to be the same, so only one can be selected -->
+        <input type="radio" name="question1" id="virtual">
         <label>Virtual attendance</label>
         <br>
-        <input type="radio" name="Physical" id="physical">
+        <input type="radio" name="question1" id="physical">
         <label>Physical attendance</label>
         <br>
         <button type="submit">Submit</button>
@@ -96,13 +105,14 @@
     <footer>
         <ul>
             <li>
-                <a href="https://ois2.ut.ee/">OIS</a>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
             </li>
             <li>
-                <a href="https://courses.cs.ut.ee/2024/WAD/fall">Courses</a>
+                <a href="https://courses.cs.ut.ee/2024/WAD/fall" target="_blank">Courses</a>
             </li>
         </ul>
     </footer>
+    
 </body>
 
 </html>
